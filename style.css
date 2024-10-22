@@ -54,7 +54,7 @@ a {
 
 a:hover {
   color: grey;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
@@ -426,7 +426,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  height: 4vh;
   margin: 0 1rem;
 }
 
