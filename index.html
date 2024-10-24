@@ -10,18 +10,18 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Almond</div>
+      <div class="logo">allaboutalmond</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Series</a></li>
-          <!-- <li><a href="#contact">Contact</a></li> -->
+          <li><a href="#series">Series</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">almondsleepalltime</div>
+      <div class="logo">allaboutalmond</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -31,31 +31,19 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Series</a></li>
-          <!-- <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> -->
+          <li><a href="#series" onclick="toggleMenu()">Series</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
-
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile/profile.PNG" alt="John Doe profile picture" />
+        <img src="./assets/profile/profile.PNG" alt="Almond profile picture" />
       </div>
       <div class="section__text">
-        <!-- <p class="section__text__p1">Hello, I'm</p> -->
+        <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Almond</h1>
         <p class="section__text__p2">Artist under Tia51</p>
-        <!-- <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div> -->
         <div id="socials-container">
           <img
             src="./assets/social/instagram.png"
@@ -84,7 +72,6 @@
         </div>
       </div>
     </section>
-
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -101,15 +88,17 @@
             <div class="details-container">
               <img
                 src="./assets/icons/user.png"
-                alt="User icon"
+                alt="Experience icon"
                 class="icon"
               />
-              <h3>Name</h3>
-              <p>ภูมิสุวรรณ สุวรรณสถิตย์ <br />POOMSUWAN SUWANSATIT</p>
-              <h3>Nickname</h3>
-              <p>แอลม่อน, ALMOND</p>
-              <h3>Birthday</h3>
-              <p>30 October 2007</p>
+              <h3>Personal Info</h3>
+              <p>ชื่อ : ภูมิสุวรรณ สุวรรณสถิตย์
+                <br />วันเกิด : 30 ตุลาคม 2007
+                <br />กีฬา : บาส, สเก็ตบอร์ด
+                <br />สัตว์เลี้ยง : แมว
+                <br />งานอดิเรก : ฟังเพลง, นอน
+                <br />ของสะสม : Lego, Nerf gun
+              </p>
             </div>
             <div class="details-container">
               <img
@@ -117,24 +106,20 @@
                 alt="Masculine-user icon"
                 class="icon"
               />
-              <h3>เสื้อ</h3>
-              <p>L</p>
-              <h3>กางเกง</h3>
-              <p>M/L</p>
-              <h3>รองเท้า</h3>
-              <p>43 cm.</p>
-              <h3>แหวน</h3>
-              <p>8 mm.</p>
+              <h3>Size</h3>
+              <p>เสื้อ : L
+                <br />กางเกง : M/L
+                <br />รองเท้า : 43 cm.
+                <br />แหวน : 8 mm.</p>
             </div>
           </div>
+          <!-- <div class="text-container">
+            <p>
+              L
+            </p>
+          </div> -->
         </div>
       </div>
-      <!-- <img
-        src="./assets/icons/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      /> -->
     </section>
 
     <section id="experience">
@@ -152,9 +137,9 @@
                   class="icon"
                 />
                 <div>
-                  <h3>2024 KAZZ MAGAZINE issue.204</h3>
-                  <p><a href="https://x.com/Kazzmagazine/status/1846498876104319201/photo/1">Cover A</a>
-                  <a href="https://x.com/Kazzmagazine/status/1846498996866666767/photo/1">Cover B</a></p>
+                  <h3>KAZZ Magazine <br /> issue.204</h3>
+                  <p><a href="https://x.com/Kazzmagazine/status/1846498876104319201/photo/1">Cover A</a>,
+                    <a href="https://x.com/Kazzmagazine/status/1846498996866666767/photo/1">Cover B</a></p>
                 </div>
               </article>
             </div>
@@ -170,7 +155,7 @@
                 />
                 <div>
                   <h3>BIFW 2023</h3>
-                  <p>แบรนด์ Kloset</p>
+                  <p>Kloset</p>
                 </div>
               </article>
               <article>
@@ -181,24 +166,18 @@
                 />
                 <div>
                   <h3>BIFW 2024</h3>
-                  <p><a href="https://x.com/Lovesick2024/status/1846478626952532315">แบรนด์ ISSUE</a></p>
-                  <p><a href="https://x.com/Lovesick2024/status/1846478878094791153">แบรนด์ Kloset</a></p>
+                  <p><a href="https://x.com/Lovesick2024/status/1846478626952532315">ISSUE</a>,
+                  <a href="https://x.com/Lovesick2024/status/1846478878094791153">Kloset</a></p>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </div>
-      <!-- <img
-        src="./assets/icons/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      /> -->
     </section>
 
-    <section id="projects">
-      <!-- <p class="section__text__p1">Browse My Recent</p> -->
+    <section id="series">
+      <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Series</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -206,11 +185,11 @@
             <div class="article-container">
               <img
                 src="./assets/lovesick2024-poster.jpeg"
-                alt="Lovesick 2024"
+                alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Lovesick 2024 <br /> รับบท "ปุณณ์"</h2>
+            <h2 class="experience-sub-title project-title">LoveSick 2024<br />รับบท ปุณณ์</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -228,17 +207,11 @@
           </div>
         </div>
       </div>
-      <!-- <img
-        src="./assets/icons/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      /> -->
     </section>
 
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
+      <h1 class="title">Contact For Work</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -246,19 +219,19 @@
             alt="Phone icon"
             class="icon contact-icon email-icon"
           />
-          <p><a>0989195325 P'Titss</a></p>
+          <p>0989195325 P'Titss</p>
         </div>
         <div class="contact-info-container">
           <img
             src="./assets/social/line.png"
-            alt="LinkedIn icon"
+            alt="Line icon"
             class="icon contact-icon"
           />
-          <p><a>Tia51artist</a></p>
+          <p>Tia51artist</p>
         </div>
       </div>
     </section>
-
+    
     <footer>
       <p>Copyright &#169; 2024 allaboutalmond. All Rights Reserved.</p>
     </footer>

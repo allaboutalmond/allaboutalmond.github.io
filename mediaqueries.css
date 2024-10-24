@@ -7,8 +7,13 @@
     flex-wrap: wrap;
   }
   #contact,
-  #projects {
+  #series {
     height: fit-content;
+  }
+
+  footer {
+    margin-top: 2rem;
+    height: 6vh;
   }
 }
 
@@ -45,15 +50,25 @@
   .about-containers {
     margin-top: 0;
   }
+
+  footer {
+    margin-top: 2rem;
+    height: 6vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
+
+  #contact {
     height: 40vh;
   }
+
+  footer {
+    margin-top: 2rem;
+    height: 6vh;
+  }
   #profile {
-    height: 83vh;
+    height: 60vh;
     margin-bottom: 0;
   }
   article {

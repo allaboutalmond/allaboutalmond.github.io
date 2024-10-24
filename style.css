@@ -151,7 +151,7 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  height: fit-content;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -167,7 +167,8 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: fit-content;
+  margin-bottom: 8rem;
 }
 
 .section__pic-container {
@@ -266,6 +267,8 @@ section {
 
 #about {
   position: relative;
+  height: fit-content;
+  margin-bottom: 8rem;
 }
 
 .about-containers {
@@ -282,8 +285,6 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
-  width: 100%; /* ขยายกล่องทั้งหมดตามขนาดหน้าจอ */
-  justify-content: space-around; /* ให้กล่องกระจายตามพื้นที่ที่มี */
 }
 
 .about-pic {
@@ -304,11 +305,13 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  width: 20rem;
 }
 
 .section-container {
   gap: 4rem;
   height: 80%;
+  justify-content: center;
 }
 
 .section__pic-container {
@@ -321,6 +324,7 @@ section {
 
 #experience {
   position: relative;
+  margin-bottom: 8rem;
 }
 
 .experience-sub-title {
@@ -347,8 +351,8 @@ section {
 
 article {
   display: flex;
-  width: 15rem;
-  justify-content: space-around;
+  width: 10rem;
+  justify-content: left;
   gap: 0.5rem;
 }
 
@@ -356,9 +360,9 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
+/* SERIES SECTION */
 
-#projects {
+#series {
   position: relative;
 }
 
@@ -415,6 +419,10 @@ article .icon {
   font-size: larger;
 }
 
+.contact-info-container img {
+  height: 2rem;
+}
+
 .contact-icon {
   cursor: default;
 }
@@ -426,7 +434,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 4vh;
+  height: 10vh;
   margin: 0 1rem;
 }
 
