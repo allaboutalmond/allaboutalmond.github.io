@@ -362,7 +362,10 @@ article .icon {
 
 /* SERIES SECTION */
 
-#series {
+#series,
+#magazine,
+#mv,
+#musics {
   position: relative;
 }
 
@@ -393,7 +396,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 50vh;
 }
 
 .contact-info-upper-container {
@@ -434,7 +437,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 10vh;
+  height: 6vh;
   margin: 0 1rem;
 }
 
