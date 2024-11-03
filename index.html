@@ -1,406 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>allaboutalmond</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo"><a href="">allaboutalmond</a></div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo"><a href="">allaboutalmond</a></div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet"
+			href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+			rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile/profile.PNG" alt="Almond profile picture" />
-      </div>
-      <div class="section__text">
-        <!-- <p class="section__text__p1">Hello, I'm</p> -->
-        <h1 class="title">Almond</h1>
-        <p class="section__text__p2">Artist under Tia51</p>
-        <div id="socials-container">
-          <img
-            src="./assets/social/instagram.png"
-            alt="My Instagram profile"
-            class="icon"
-            onclick="location.href='https://www.instagram.com/almondbabybigboy'"
-          />
-          <img
-            src="./assets/social/twitter.png"
-            alt="My Twitter profile"
-            class="icon"
-            onclick="location.href='https://x.com/almondsleepp'"
-          />
-          <img
-            src="./assets/social/tiktok.png"
-            alt="My Tiktok profile"
-            class="icon"
-            onclick="location.href='https://www.tiktok.com/@almondbabybigboy'"
-          />
-          <img
-            src="./assets/social/weibo.png"
-            alt="My Weibo profile"
-            class="icon"
-            onclick="location.href='https://weibo.com/u/7951231768'"
-          />
-        </div>
-      </div>
-    </section>
+		<title>AllAboutAlmond</title>
+	</head>
+	<body>
+		<header>
+			<a href="#" class="logo">AllAboutAlmond</a>
+			<div class="bx bx-menu" id="menu-icon"></div>
+			<ul class="navlist">
+				<li><a href="index.html">ประวัติส่วนตัว</a></li>
+				<li><a href="series.html">ซีรีส์</a></li>
+				<li><a href="single.html">เพลง</a></li>
+				<li><a href="content.html">รายการ</a></li>
+				<li><a href="photoshoots.html">นิตยสาร</a></li>
+				<li><a href="schedule.html">ตารางงาน</a></li>
+			</ul>
+		</header>
 
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/profile/profile-2.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/icons/user.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Personal Info</h3>
-              <p>ชื่อ : ภูมิสุวรรณ สุวรรณสถิตย์
-                <br />วันเกิด : 30 ตุลาคม 2007
-                <br />กีฬา : บาส, สเก็ตบอร์ด
-                <br />สัตว์เลี้ยง : แมว
-                <br />งานอดิเรก : ฟังเพลง, นอน
-                <br />ของสะสม : Lego, Nerf gun
-              </p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/icons/masculine-user.png"
-                alt="Masculine-user icon"
-                class="icon"
-              />
-              <h3>Size</h3>
-              <p>เสื้อ : L
-                <br />กางเกง : M/L
-                <br />รองเท้า : 43 cm.
-                <br />แหวน : 8 mm.</p>
-            </div>
-          </div>
-          <!-- <div class="text-container">
-            <p>
-              L
-            </p>
-          </div> -->
-        </div>
-      </div>
-    </section>
+		<!-- <section id="profile">
+			<div class="section__pic-container">
+				<img src="./assets/profile.PNG" alt="John Doe profile picture" />
+			</div>
+			<div class="section__text">
+				<p class="section__text__p1">Hello, I'm</p>
+				<h1 class="title">Almond</h1>
+				<p class="section__text__p2">Artist under Tia51</p>
+				<div id="socials-container">
+					<img
+						src="./assets/instagram.png"
+						alt="My Instagram profile"
+						class="icon"
+						onclick="location.href='https://www.instagram.com/almondbabybigboy'" />
+					<img
+						src="./assets/twitter.png"
+						alt="My Twitter profile"
+						class="icon"
+						onclick="location.href='https://x.com/almondsleepp'" />
+					<img
+						src="./assets/tiktok.png"
+						alt="My Tiktok profile"
+						class="icon"
+						onclick="location.href='https://www.tiktok.com/@almondbabybigboy'" />
+					<img
+						src="./assets/weibo.png"
+						alt="My Weibo profile"
+						class="icon"
+						onclick="location.href='https://weibo.com/u/7951231768'" />
+				</div>
+			</div>
+		</section> -->
 
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title"><a href="#series">Series</a></h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/icons/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>LoveSick 2024</h3>
-                  <p>รับบท "ปุณณ์"</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title"><a href="#magazine">Magazine</a></h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/icons/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>KAZZ Magazine <br /> issue.204</h3>
-                  <p><a href="https://x.com/Kazzmagazine/status/1846498876104319201/photo/1">Cover A</a>,
-                    <a href="https://x.com/Kazzmagazine/status/1846498996866666767/photo/1">Cover B</a></p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title"><a href="#musics">Music</a></h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/icons/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>สั่น (Shake)</h3>
-                  <p>OST. LoveSick 2024</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/icons/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ให้เธอเป็นทะเล</h3>
-                  <p>OST. LoveSick 2024</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title"><a href="#mv">Music Video</a></h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/icons/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>สั่น (Shake)</h3>
-                  <p>OST. LoveSick 2024</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<section id="about">
+			<div class="about-img">
+				<img src="./assets/profile-pic-2.png">
+			</div>
+			<div class="about-text">
+				<h2>ภูมิสุวรรณ สุวรรณสถิตย์<br/>Poomsuwan Suwansatit</h2>
+				<p class="section__text__p2">Artist under Tia51</p>
+				<div class="exp-area">
+					<p class="exp">
+						วันเกิด:
+						<span>30 ตุลาคม 2007</span>
+					</p>
 
-    <section id="series">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Series</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/lovesick2024-poster.jpeg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">LoveSick 2024<br />รับบท ปุณณ์</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.iq.com/album/lovesick-2024-ชุลมุนกางเกงน้ำเงิน-uncut-2024-t72xo8wib9?lang=th_th'"
-              >
-                iQIYI
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://youtube.com/playlist?list=PL4CcyXYrOBWOxyawkVjS40gBuAd_nc52R&si=K6qMiXSfowRItnqa'"
-              >
-                Youtube
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://youtube.com/playlist?list=PL4CcyXYrOBWOgaTkpLVCxzknMYK5-kW4A&si=ppXnyaX1sq9IbVc_'"
-              >
-                More Video
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+					<p class="exp">
+						กีฬา:
+						<span>บาส, สเก็ตบอร์ด</span>
+					</p>
+					<p class="exp">
+						สัตว์เลี้ยง:
+						<span>แมว</span>
+					</p>
 
-    <section id="magazine">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Magazine</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="https://kazzmarket.com/wp-content/uploads/2024/10/%E0%B8%9B%E0%B8%81-KAZZ-2046%E0%B8%A2%E0%B9%88%E0%B8%AD.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">KAZZ MAGAZINE issue.204<br />Cover A</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://x.com/Kazzmagazine/status/1846498876104319201/photo/1'"
-              >
-                Details
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://kazzmarket.com/product/store/kazz-204-love-sick-almond-progress-krit-nj-toto-volk-shane-sky-a/'"
-              >
-                Order Here
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="https://kazzmarket.com/wp-content/uploads/2024/10/%E0%B8%9B%E0%B8%81-KAZZ-2045%E0%B8%A2%E0%B9%88%E0%B8%AD.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">KAZZ MAGAZINE issue.204<br />Cover B</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://x.com/Kazzmagazine/status/1846498996866666767/photo/1'"
-              >
-                Details
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://kazzmarket.com/product/store/kazz-204-love-sick-almond-progress-krit-nj-toto-volk-shane-sky-b/'"
-              >
-                Order Here
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+					<p class="exp">
+						งานอดิเรก:
+						<span>ฟังเพลง, นอน</span>
+					</p>
 
-    <section id="musics">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Music</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="https://lh3.googleusercontent.com/XkieDPL1K9roHkhZwUSlUFCKaOit-E7d83El377THJWpwovWxwNxiZS1Lbn5KmMZS3x_37h5f321YMsj=w544-h544-l90-rj"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">สั่น (Shake) <br /> OST.LoveSick 2024</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://youtu.be/NqT_Uk6FR6E?si=Uc-lAko8Zpo6SOzi'"
-              >
-                Youtube
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="https://lh3.googleusercontent.com/W1ZxwgMqTiyBQ862lXddWgd43VWMjGCBfwt-wQ01opZj27dGPdrGmCttu_cVXFEqrrmXjphCgLAsQBdV=w544-h544-l90-rj"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">ให้เธอเป็นทะเล <br /> OST.LoveSick 2024</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.youtube.com/watch?v=OrDyjI5EOVM'"
-              >
-                Youtube
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+					<p class="exp">
+						ของสะสม:
+						<span>Lego, Nerf gun</span>
+					</p>
+				</div>
+				<div id="socials-container">
+					<img
+						src="./assets/instagram.png"
+						alt="My Instagram profile"
+						class="icon"
+						onclick="location.href='https://www.instagram.com/almondbabybigboy'" />
+					<img
+						src="./assets/twitter.png"
+						alt="My Twitter profile"
+						class="icon"
+						onclick="location.href='https://x.com/almondsleepp'" />
+					<img
+						src="./assets/tiktok.png"
+						alt="My Tiktok profile"
+						class="icon"
+						onclick="location.href='https://www.tiktok.com/@almondbabybigboy'" />
+					<img
+						src="./assets/weibo.png"
+						alt="My Weibo profile"
+						class="icon"
+						onclick="location.href='https://weibo.com/u/7951231768'" />
+				</div>
+			</div>
 
-    <section id="mv">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Music Video</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="https://img.youtube.com/vi/jD71BqmP_ys/maxresdefault.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">สั่น (Shake) <br /> OST.LoveSick 2024</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://youtu.be/jD71BqmP_ys?si=anAQ8cYpVCi8oCve'"
-              >
-                Youtube
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		</section>
 
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact For Work</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/social/phone-call.png"
-            alt="Phone icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>0989195325 P'Titss</p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/social/line.png"
-            alt="Line icon"
-            class="icon contact-icon"
-          />
-          <p>Tia51artist</p>
-        </div>
-      </div>
-    </section>
-    
-    <footer>
-      <p>Copyright &#169; 2024 allaboutalmond. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+		<section id="contact">
+			<p class="section__text__p1">Get in Touch</p>
+			<h1 class="title">Contact For Work</h1>
+			<div class="contact-con">
+				<div class="contact-item">
+					<img
+						src="assets/phone-call.png"
+						alt="Email icon"
+						class="icon contact-icon email-icon"
+					/>
+					<p>0989195325 P'Titss</p>
+				</div>
+				<div class="contact-item">
+					<img
+					  src="assets/line.png"
+					  alt="LinkedIn icon"
+					  class="icon contact-icon email-icon"
+					/>
+					<p>Tia51artist</p>
+				</div>
+			</div>
+			<!-- <div class="contact-info-upper-container">
+			  <div class="contact-info-container">
+				<img
+				  src="assets/phone-call.png"
+				  alt="Email icon"
+				  class="icon contact-icon email-icon"
+				/>
+				<p>0989195325 P'Titss</p>
+			  </div>
+			  <div class="contact-info-container">
+				<img
+				  src="assets/line.png"
+				  alt="LinkedIn icon"
+				  class="icon contact-icon"
+				/>
+				<p>Tia51artist</p>
+			  </div>
+			</div> -->
+		</section>
+
+		<!-- <div class="footer">
+			<div class="copyright">
+				<p>&copy; All rights reserved.
+					By <a href="https://x.com/punitups">punitups</a>
+					Last Update 1/11/2024
+				</p>
+			</div>
+		</div> -->
+
+		<div id="footer-container"></div>
+
+		<script src="script.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({ offset:300, duration:1400,});
+		</script>
+	</body>
 </html>
