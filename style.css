@@ -218,7 +218,8 @@ section {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1rem;
-    height: 80vh;
+    height: fit-content;
+    margin-top: 50px;
 }
 
 .about-img {
@@ -266,7 +267,7 @@ section {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    width: 300px;
+    width: 500px;
     border-radius: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
@@ -300,10 +301,10 @@ section {
 /* single */
 .single-con {
     padding: 20px 1%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem; /* ใช้ gap แทน grid-gap */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* ใช้ gap แทน grid-gap */
 }
 
 .single-item {
@@ -311,15 +312,11 @@ section {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    /* ต้องการให้ single-detail ติดขอบล่าง */
+    width: 300px;
     border-radius: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
     outline: 2px solid white;
-}
-
-.single-item:hover {
-    outline: 2px solid #a2d2ff;
 }
 
 .single-title {
@@ -483,11 +480,75 @@ hr {
 }
 
 .event-content p {
-    font-size: 20px;
+    color: black;
+    font-size: 18px;
 }
 
 .event-tag {
+    color: #555555;
     font-size: 12px;
+}
+
+.event-type-close {
+    font-size: 12px;
+    color: red;
+}
+
+.event-type-open {
+    font-size: 12px;
+    color: darkgoldenrod;
+}
+
+.popup {
+    display: none; /* Make sure to change to 'flex' when opening */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    display: flex; /* Make it a flex container */
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    height: 80%; /* Set a fixed height for the popup content */
+    max-width: 90%; /* Adjust maximum width of the content */
+    overflow: hidden; /* Hide overflow to avoid scrollbars */
+}
+
+.popup-content img {
+    max-width: 100%; /* Ensure the image does not exceed the popup width */
+    max-height: 100%; /* Ensure the image does not exceed the popup height */
+    object-fit: contain; /* Maintain aspect ratio */
+    cursor: pointer;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
 }
 
 .event-detail-box {
@@ -687,19 +748,18 @@ hr {
         display: flex;
         justify-content: center;
     }
-    .event-con {
-        padding: 20px 1%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem; /* ใช้ gap แทน grid-gap */
-    }
 
     :root {
         --h1-font: 2.5rem;
         --h2-font: 2rem;
         --p-font: 1.1rem;
         --p2-font:1.5rem;
+    }
+}
+
+@media (max-width: 730px) {
+    .event-item {
+        height: fit-content;
     }
 }
 
@@ -734,5 +794,20 @@ hr {
         gap: 0.5rem;
         display: flex;
         align-items: center;
+    }
+
+    .event-con {
+        padding: 20px 1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem; /* ใช้ gap แทน grid-gap */
+    }
+
+    .event-content p {
+        font-size: 16px;
+    }
+    .groupbydate {
+        font-size: 18px;
     }
 }

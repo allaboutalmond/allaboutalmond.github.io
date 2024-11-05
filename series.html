@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<header>
-			<a href="#" class="logo">AllAboutAlmond</a>
+			<a href="index.html" class="logo">AllAboutAlmond</a>
 			<div class="bx bx-menu" id="menu-icon"></div>
 			<ul class="navlist">
 				<li><a href="index.html">ประวัติส่วนตัว</a></li>
@@ -27,6 +27,10 @@
 				<li><a href="schedule.html">ตารางงาน</a></li>
 			</ul>
 		</header>
+
+		<div id="popup" class="popup">
+			<img id="popup-img" src="" alt="Full-size Event Image" onclick="closePopup()">
+		</div>
 		
 		<section id="series">
 			<!-- <p class="section__text__p1">Explore My</p> -->
@@ -34,7 +38,7 @@
 			<div class="single-con">
 				<div class="series-item">
 					<div class="series-img">
-						<img src="https://pbs.twimg.com/media/GWEbfFsbUAA0VJk?format=jpg&name=large" alt>
+						<img src="https://pbs.twimg.com/media/GWEbfFsbUAA0VJk?format=jpg&name=large" onclick="openPopup('https://pbs.twimg.com/media/GWEbfFsbUAA0VJk?format=jpg&name=large')">
 					</div>
 					<div class="series-title">
 						Lovesick 2024<br/>รับบท "ปุณณ์"

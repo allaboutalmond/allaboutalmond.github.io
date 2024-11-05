@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<header>
-			<a href="#" class="logo">AllAboutAlmond</a>
+			<a href="index.html" class="logo">AllAboutAlmond</a>
 			<div class="bx bx-menu" id="menu-icon"></div>
 			<ul class="navlist">
 				<li><a href="index.html">ประวัติส่วนตัว</a></li>
@@ -31,42 +31,18 @@
 		<section id="event">
 			<!-- <p class="section__text__p1">Explore My</p> -->
 			<h1 class="title">ตารางงานและกิจกรรม</h1>
-			<div class="event-groupbydate">
-				<div class="groupbydate">THIS MONTH - พฤษจิกายน 2024</div>
+			<div class="event-groupbydate" id="upcoming">
+				<div class="groupbydate">UPCOMING</div>
 				<div class="event-con">
 					<div class="event-item">
 						<div class="event-img">
 							<img
-								src="https://pbs.twimg.com/media/Ga9SD_RbsAAvQoK?format=jpg&name=large"
-								alt>
-						</div>
-						<div class="event-content">
-							<p>iQIYI iJOY TH 2025</p>
-							<div class="event-tag"><a href="https://x.com/search?q=iQIYIiJOY+x+LoveSick2024&src=trend_click">iQIYIiJOY x LoveSick2024</a><br/><a href="https://x.com/hashtag/iQIYIiJOYTH2025?src=hashtag_click">#iQIYIiJOYTH2025</a></div>
-							<div class="event-detail"></div>
-							<div class="event-detail-box">
-								<i class="fa-solid fa-calendar-days"></i>
-								1/11/2024
-								<i class="fa-solid fa-clock"></i>
-								15:00
-							</div>
-							<div class="event-detail-box">
-								<i class="fa-solid fa-location-dot"></i>
-								SPHERE HALL ชั้น 5 EMSPHERE
-							</div>
-							<div class="event-detail-box-center"
-								onclick="window.location.href='https://www.youtube.com/live/2UQmGKu_PQY?si=Orys2sZOFtAHKr41&t=8369'">
-								รับชมย้อนหลัง
-							</div>
-						</div>
-					</div>
-					<div class="event-item">
-						<div class="event-img">
-							<img
 								src="https://pbs.twimg.com/media/GbNJBPyb0AAyzem?format=jpg&name=large"
-								alt>
+								onclick="openPopup(['assets/schedule/2024/SEKKISEIxAlmondProgress-1.mp4'])"
+							>
 						</div>
 						<div class="event-content">
+							<div class="event-type-close">งานปิด เฉพาะผู้โชคดี</div>
 							<p>SEKKISEI x AlmondProgress</p>
 							<div class="event-tag"><a href="https://x.com/hashtag/SEKKISEIxAlmondProgress?src=hashtag_click">#SEKKISEIxAlmondProgress</a></div>
 							<div class="event-detail"></div>
@@ -82,31 +58,226 @@
 							</div>
 						</div>
 					</div>
+					<div class="event-item">
+						<div class="event-img">
+							<img
+								src="https://pbs.twimg.com/media/GbhJN3lb0AAzqSr?format=jpg&name=medium"
+								onclick="openPopup(['https://pbs.twimg.com/media/GbhpbokaAAAHIkC?format=jpg&name=large', 'https://pbs.twimg.com/media/Gbhpbp7aMAAeA1H?format=jpg&name=medium', 'https://pbs.twimg.com/media/GbhpbySaUAATUL-?format=jpg&name=4096x4096', 'https://pbs.twimg.com/media/Gbhpb3NaQAA-3HN?format=jpg&name=4096x4096'])"
+							>
+						</div>
+						<div class="event-content">
+							<div class="event-type-close">งานปิด เฉพาะผู้โชคดี</div>
+							<p>AIS Calling Melody "LOVESICK Exclusive Party"</p>
+							<div class="event-detail"></div>
+							<div class="event-detail-box">
+								<i class="fa-solid fa-calendar-days"></i>
+								1/3/2025
+								<!-- <i class="fa-solid fa-clock"></i>
+								16:00-17:00 -->
+							</div>
+							<div class="event-detail-box-center"
+								onclick="window.location.href='https://www.ais.th/callingmelody/home/activity/66f3c2a9602a96001929a4e8/detail'">
+								รายละเอียดเพิ่มเติม
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+
 			<hr>
-			<div class="event-groupbydate">
+			<div class="event-groupbydate" id="2024nov">
+				<div class="groupbydate">พฤษจิกายน 2024</div>
+				<div class="event-con">
+					<div class="event-item">
+						<div class="event-img">
+							<img
+								src="https://pbs.twimg.com/media/Ga9SD_RbsAAvQoK?format=jpg&name=large"
+								alt="iqiyi ijoy"
+								onclick="openPopup(['assets/schedule/2024/iQIYIiJOY.mp4'])"
+							>
+						</div>
+						<div class="event-content">
+							<div class="event-type-open">งานอีเวนต์</div>
+							<p>iQIYI iJOY TH 2025</p>
+							<div class="event-tag"><a href="https://x.com/search?q=iQIYIiJOY+x+LoveSick2024&src=trend_click">iQIYIiJOY x LoveSick2024</a><br/><a href="https://x.com/hashtag/iQIYIiJOYTH2025?src=hashtag_click">#iQIYIiJOYTH2025</a></div>
+							<div class="event-detail">
+								<div class="event-detail-box">
+									<i class="fa-solid fa-calendar-days"></i>
+									1/11/2024
+									<i class="fa-solid fa-clock"></i>
+									15:00
+								</div>
+								<div class="event-detail-box">
+									<i class="fa-solid fa-location-dot"></i>
+									SPHERE HALL ชั้น 5 EMSPHERE
+								</div>
+								<div class="event-detail-box-center"
+									onclick="window.location.href='https://www.youtube.com/live/2UQmGKu_PQY?si=Orys2sZOFtAHKr41&t=8369'">
+									รับชมย้อนหลัง
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="event-item">
+						<div class="event-img">
+							<img
+								src="https://pbs.twimg.com/media/GY25GzAaIAAJPoH?format=jpg&name=medium"
+								alt="17thbd"
+								onclick="openPopup(['https://pbs.twimg.com/media/GY25GzAaIAAJPoH?format=jpg&name=medium'])"
+							>
+						</div>
+						<div class="event-content">
+							<div class="event-type-close">งานปิด เฉพาะผู้มีสิทธ์</div>
+							<p>Almond 17th White Birthday</p>
+							<div class="event-tag"><a href="https://x.com/search?q=Almond17thWhiteBirthday&src=trend_click">#Almond17thWhiteBirthday</a></div>
+							<div class="event-detail">
+								<div class="event-detail-box">
+									<i class="fa-solid fa-calendar-days"></i>
+									3/11/2024
+									<i class="fa-solid fa-clock"></i>
+									13:00 - 16:00
+								</div>
+								<div class="event-detail-box">
+									<i class="fa-solid fa-location-dot"></i>
+									Victor Club - Sathorn Square
+								</div>
+								<div class="event-detail-box-center"
+									onclick="window.location.href='https://www.youtube.com/live/tk4RKk6VfPs?si=ZPm9lqXsvLVzehrk'">
+									รับชมย้อนหลัง
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="event-groupbydate" id="2024oct">
 				<div class="groupbydate">ตุลาคม 2024</div>
 				<div class="event-con">
 					<div class="event-item">
 						<div class="event-img">
 							<img
-								src="https://pbs.twimg.com/media/GZIPHmea8AAiRzF?format=jpg&name=medium"
-								alt>
+								src="https://pbs.twimg.com/media/GYxsB6GaMAAxdox?format=jpg&name=large"
+								onclick="openPopup(['https://pbs.twimg.com/media/GaACv91boAAdnrs?format=jpg&name=large', 'https://pbs.twimg.com/media/GaACv9za4AA5B64?format=jpg&name=large'])"
+							>
 						</div>
 						<div class="event-content">
+							<div class="event-type-close">งานปิด เฉพาะผู้มีบัตร</div>
+							<p>#BIFW2024 <br/>เดินแบบ แบรนด์ Kloset</p>
+							<div class="event-detail">
+								<div class="event-detail-box">
+									<i class="fa-solid fa-calendar-days"></i>
+									3/10/2024
+									<i class="fa-solid fa-clock"></i>
+									20:30
+								</div>
+								<div class="event-detail-box">
+									<i class="fa-solid fa-location-dot"></i>
+									Parc Paragon
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="event-item">
+						<div class="event-img">
+							<img
+								src="https://pbs.twimg.com/media/GYxscsobQAIi3ZX?format=jpg&name=large"
+								onclick="openPopup(['https://pbs.twimg.com/media/GaAChVQaIAAPQbP?format=jpg&name=large'])"
+							>
+						</div>
+						<div class="event-content">
+							<div class="event-type-close">งานปิด เฉพาะผู้มีบัตร</div>
+							<p>#BIFW2024 <br/>เดินแบบ แบรนด์ Issue</p>
+							<div class="event-detail">
+								<div class="event-detail-box">
+									<i class="fa-solid fa-calendar-days"></i>
+									4/10/2024
+									<i class="fa-solid fa-clock"></i>
+									19:00
+								</div>
+								<div class="event-detail-box">
+									<i class="fa-solid fa-location-dot"></i>
+									Parc Paragon
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="event-item">
+						<div class="event-img">
+							<img
+								src="https://pbs.twimg.com/media/GYxwbdobQAQKmS7?format=jpg&name=large"
+								onclick="openPopup(['https://pbs.twimg.com/media/GaADIoUbYAAoTLo?format=jpg&name=large',
+										'assets/schedule/2024/bifw-painkiller-1.jpg', 'assets/schedule/2024/bifw-painkiller-2.jpg', 'assets/schedule/2024/bifw-painkiller-3.jpg'
+								])"
+							>
+						</div>
+						<div class="event-content">
+							<div class="event-type-close">งานปิด</div>
+							<p>#BIFW2024<br/>ร่วมชมโชว์ แบรนด์ Painkiller Atelier</p>
+							<div class="event-detail">
+								<div class="event-detail-box">
+									<i class="fa-solid fa-calendar-days"></i>
+									5/10/2024
+									<i class="fa-solid fa-clock"></i>
+									16:00
+								</div>
+								<div class="event-detail-box">
+									<i class="fa-solid fa-location-dot"></i>
+									Parc Paragon
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="event-item">
+						<div class="event-img">
+							<img
+								src="https://pbs.twimg.com/media/GZIPHmea8AAiRzF?format=jpg&name=medium"
+								onclick="openPopup(['assets/schedule/2024/MardiMercrediTHxAlmondProgress.mp4', 'https://pbs.twimg.com/media/GZXq2-LagAEjfTk?format=jpg&name=large', 
+											'assets/schedule/2024/MardiMercrediTH-1.jpg', 'assets/schedule/2024/MardiMercrediTH-2.jpg',
+											'assets/schedule/2024/MardiMercrediTH-3.jpg', 'assets/schedule/2024/MardiMercrediTH-4.jpg',
+											'assets/schedule/2024/MardiMercrediTH-5.jpg'])"
+							>
+						</div>
+						<div class="event-content">
+							<div class="event-type-open">งานอีเวนต์ มีรวมผล</div>
 							<p>Mardi Mercredi <br/>FIRST FLAGSHIP STORE <br/>IN SOUTHEAST ASIA !</p>
 							<div class="event-tag"><a href="https://x.com/hashtag/MardiMercrediTHxAlmondProgress?src=hashtag_click">#MardiMercrediTHxAlmondProgress</a></div>
-							<div class="event-detail"></div>
-							<div class="event-detail-box">
-								<i class="fa-solid fa-calendar-days"></i>
-								8/10/2024
-								<i class="fa-solid fa-clock"></i>
-								16.00
+							<div class="event-detail">
+								<div class="event-detail-box">
+									<i class="fa-solid fa-calendar-days"></i>
+									8/10/2024
+									<i class="fa-solid fa-clock"></i>
+									16:00
+								</div>
+								<div class="event-detail-box">
+									<i class="fa-solid fa-location-dot"></i>
+									Level3, Central Embassy 
+								</div>
 							</div>
-							<div class="event-detail-box">
-								<i class="fa-solid fa-location-dot"></i>
-								Level3, Central Embassy 
+						</div>
+					</div>
+					<div class="event-item">
+						<div class="event-img">
+							<img
+								src="https://pbs.twimg.com/media/GZXku0KasAIQhNR?format=jpg&name=medium"
+								onclick="openPopup(['https://pbs.twimg.com/media/GaQNlVKbUAEszL7?format=jpg&name=large', 'https://pbs.twimg.com/media/GapQ0B0aUAAzocV?format=jpg&name=large', 'https://pbs.twimg.com/media/GapQ0B0agAAuKR0?format=jpg&name=large', 'https://pbs.twimg.com/media/GapQ0B4agAA9B3S?format=jpg&name=large', 'https://pbs.twimg.com/media/GapQ4TBbMAACajY?format=jpg&name=large', 'https://pbs.twimg.com/media/GapQ4TVacAAuLM7?format=jpg&name=large', 'https://pbs.twimg.com/media/GapQ4TGa8AAY3F1?format=jpg&name=large', 'https://pbs.twimg.com/media/GapQ4TYbAAAojJp?format=jpg&name=large', 'https://pbs.twimg.com/media/GapQ8PraoAAj7HY?format=jpg&name=large', 'https://pbs.twimg.com/media/GapQ8Pka8AAH7Se?format=jpg&name=large', 'https://pbs.twimg.com/media/GaQ0lT1bUAMZ2eN?format=jpg&name=large'])"
+							>
+						</div>
+						<div class="event-content">
+							<div class="event-type-close">งานปิด เฉพาะผู้มีสิทธ์</div>
+							<p>LoveSick2024 Midterm Friday College</p>
+							<div class="event-tag"><a href="https://x.com/hashtag/LoveSick2024MidtermEP6?src=hashtag_click">#LoveSick2024MidtermEP6</a></div>
+							<div class="event-detail">
+								<div class="event-detail-box">
+									<i class="fa-solid fa-calendar-days"></i>
+									19/10/2024
+									<i class="fa-solid fa-clock"></i>
+									15:00
+								</div>
+								<div class="event-detail-box">
+									<i class="fa-solid fa-location-dot"></i>
+									บริษัท Tia51 จำกัด
+								</div>
 							</div>
 						</div>
 					</div>
@@ -114,40 +285,177 @@
 						<div class="event-img">
 							<img
 								src="assets/schedule/schedule-10-27.jpg"
-								alt>
+							>
 						</div>
 						<div class="event-content">
+							<div class="event-type-open">งานอีเวนต์ มีรวมผล</div>
 							<p>Jeans Fest Niyom Jeans</p>
 							<div class="event-tag"><a href="https://x.com/hashtag/NiyomJeansxAlmondProgress?src=hashtag_click">#NiyomJeansxAlmondProgress</a></div>
-							<div class="event-detail"></div>
-							<div class="event-detail-box">
-								<i class="fa-solid fa-calendar-days"></i>
-								27/10/2024
-								<i class="fa-solid fa-clock"></i>
-								15:00
-							</div>
-							<div class="event-detail-box">
-								<i class="fa-solid fa-location-dot"></i>
-								ลานโปรโมชั่น ชั้น 1 โรบินสัน ฉะเชิงเทรา
-							</div>
-							<div class="event-detail-box-center"
-								onclick="window.location.href='https://www.facebook.com/share/v/Q7dR5pYBcjXpaDNj/'">
-								ไลฟ์ย้อนหลัง
+							<div class="event-detail">
+								<div class="event-detail-box">
+									<i class="fa-solid fa-calendar-days"></i>
+									27/10/2024
+									<i class="fa-solid fa-clock"></i>
+									15:00
+								</div>
+								<div class="event-detail-box">
+									<i class="fa-solid fa-location-dot"></i>
+									ลานโปรโมชั่น ชั้น 1 โรบินสัน ฉะเชิงเทรา
+								</div>
+								<div class="event-detail-box-center"
+									onclick="window.location.href='https://www.facebook.com/share/v/Q7dR5pYBcjXpaDNj/'">
+									ไลฟ์ย้อนหลัง
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<div class="event-groupbydate" id="2024sep">
+				<div class="groupbydate">กันยายน 2024</div>
+				<div class="event-con">
+					<div class="event-item">
+						<div class="event-img">
+							<img
+								src="https://pbs.twimg.com/media/GWn2Wn2a8AAoJUT?format=jpg&name=large"
+							>
+						</div>
+						<div class="event-content">
+							<div class="event-type-open">งานเปิด ไม่มีรวมพล</div>
+							<p>แพรว Charity</p>
+							<div class="event-detail">
+								<div class="event-detail-box">
+									<i class="fa-solid fa-calendar-days"></i>
+									7/9/2024
+									<i class="fa-solid fa-clock"></i>
+									14:50
+								</div>
+								<div class="event-detail-box">
+									<i class="fa-solid fa-location-dot"></i>
+									Parc Paragon
+								</div>
+								<div class="event-detail-box-center"
+									onclick="window.location.href='https://youtu.be/ra0M1PhCL84?si=0e38H1fJc7mP4xUI'">
+									รับชมย้อนหลัง
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="event-item">
+						<div class="event-img">
+							<img
+								src="https://pbs.twimg.com/media/GWn3TrTbcAEzJLx?format=jpg&name=large"
+								onclick="openPopup(['https://pbs.twimg.com/media/GYVjAScWQAQFECU?format=jpg&name=large', 'https://pbs.twimg.com/media/GYUlV-IaoAE5s1C?format=jpg&name=large'])"
+							>
+						</div>
+						<div class="event-content">
+							<div class="event-type-open">งานเปิด ไม่มีรวมพล</div>
+							<p>MCOTxSIAM PARAGON present NINEENTERTAIN BIRTHDAY FESTIVAL 2024</p>
+							<div class="event-tag"><a href="https://x.com/hashtag/9entbd22ndxLoveSick2024?src=hashtag_click">#9entbd22ndxLoveSick2024</a></div>
+							<div class="event-detail">
+								<div class="event-detail-box">
+									<i class="fa-solid fa-calendar-days"></i>
+									25/9/2024
+									<!-- <i class="fa-solid fa-clock"></i>
+									14:50 -->
+								</div>
+								<div class="event-detail-box">
+									<i class="fa-solid fa-location-dot"></i>
+									Parc Paragon
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="event-item">
+						<div class="event-img">
+							<img
+								src="https://pbs.twimg.com/media/GYJJgRgaAAAL6Xk?format=jpg&name=large"
+								onclick="openPopup(['https://pbs.twimg.com/media/GYerE4ObAAEmQTa?format=jpg&name=large', 'https://pbs.twimg.com/media/GYerE4VaYAAaXPe?format=jpg&name=large', 'https://pbs.twimg.com/media/GYerE4TboAEtp-j?format=jpg&name=large', 'https://pbs.twimg.com/media/GYerE4UbUAENlAR?format=jpg&name=large', 'https://pbs.twimg.com/media/GYerHsvbMAA91Xg?format=jpg&name=large', 'https://pbs.twimg.com/media/GYerHs8awAAOHPZ?format=jpg&name=large'])"
+							>
+						</div>
+						<div class="event-content">
+							<div class="event-type-open">Press Tour</div>
+							<p>LOVESICK2024 PRESSTOUR</p>
+							<div class="event-tag"><a href="https://x.com/hashtag/Lovesick2024PressTour?src=hashtag_click">#Lovesick2024PressTour</a></div>
+							<div class="event-detail">
+								<div class="event-detail-box">
+									<i class="fa-solid fa-calendar-days"></i>
+									27/9/2024
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="event-groupbydate" id="2024">
+				<div class="groupbydate">2024</div>
+				<div class="event-con">
+					<div class="event-item">
+						<div class="event-img">
+							<img
+								src="https://pbs.twimg.com/media/GKNZl-VbQAEvZGH?format=jpg&name=large"
+								onclick="openPopup(['https://pbs.twimg.com/media/GKNZl-VbQAEvZGH?format=jpg&name=large'])">
+						</div>
+						<div class="event-content">
+							<div class="event-type-open">งานอีเวนต์</div>
+							<p>HLA Summer time , Festival of colors</p>
+							<div class="event-tag"><a href="https://x.com/hashtag/HLAxLovesick2024?src=hashtag_click">#HLAxLovesick2024</a></div>
+							<div class="event-detail">
+								<div class="event-detail-box">
+									<i class="fa-solid fa-calendar-days"></i>
+									7/4/2024
+									<i class="fa-solid fa-clock"></i>
+									18:00
+								</div>
+								<div class="event-detail-box">
+									<i class="fa-solid fa-location-dot"></i>
+									ลานอีเว้นท์ Cascata ชั้น G , Future Park รังสิต 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="event-item">
+						<div class="event-img">
+							<img
+								src="https://pbs.twimg.com/media/GDdnQXua0AAQanN?format=jpg&name=large"
+								onclick="openPopup(['https://pbs.twimg.com/media/GDdnQXua0AAQanN?format=jpg&name=large'])">
+						</div>
+						<div class="event-content">
+							<div class="event-type-open">งานอีเวนต์</div>
+							<p>#EMFASHIONICON YOUTHQUAKE RUNWAY 2024</p>
+							<div class="event-tag"><a href="https://x.com/hashtag/LOVESICK2024xEMFASHIONICON?src=hashtag_click">#LOVESICK2024xEMFASHIONICON</a></div>
+							<div class="event-detail">
+								<div class="event-detail-box">
+									<i class="fa-solid fa-calendar-days"></i>
+									13/1/2024
+									<i class="fa-solid fa-clock"></i>
+									14:00
+								</div>
+								<div class="event-detail-box">
+									<i class="fa-solid fa-location-dot"></i>
+									Sphere Gallery 1 , M Floor Emsphere
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
 		</section>
 
-		<!-- <div class="footer">
-			<div class="copyright">
-				<p>&copy; All rights reserved.
-					By <a href="https://x.com/punitups">punitups</a>
-					Last Update 1/11/2024
-				</p>
+		<div id="popup" class="popup" onclick="closePopup()">
+			<div class="popup-content" onclick="event.stopPropagation()">
+				<img id="popup-img" src="" alt="Full-size Event Image" onclick="closePopup()">
+				<video id="popup-video" controls style="display: none; max-width: 100%; max-height: 100%;">
+					<source id="video-source" src="" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<button class="nav-btn prev-btn" onclick="prevMedia()">❮</button>
+        		<button class="nav-btn next-btn" onclick="nextMedia()">❯</button>
 			</div>
-		</div> -->
+		</div>
 
 		<div id="footer-container"></div>
 
